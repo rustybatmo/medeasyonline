@@ -1,0 +1,35 @@
+@import '../colors.scss';
+
+.LandingPage {
+  min-height: 80vh;
+  margin-bottom: 5rem;
+  &__welcome {
+    display: flex;
+    justify-content: space-between;
+    min-height: 41.2rem;
+  }
+
+  &__helpform {
+    flex: 1;
+    margin-left: 6.8rem;
+    margin-right: 3.5rem;
+    &-title {
+      text-align: center;
+      margin-bottom: 2.7rem;
+    }
+  
+    .CustomButton {
+      margin-top: 1rem;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  &__featured-products, &__best-products {
+    margin-top: 2.5rem;
+    & .ProductList {
+      margin-top: 2.3rem;
+    }
+  }
+}

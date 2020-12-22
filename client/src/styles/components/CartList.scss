@@ -1,0 +1,8 @@
+.CartList {
+  display: flex;
+  flex-direction: column;
+  & img { cursor: pointer; }
+  & .CartListItem {
+    border-bottom: 1px solid #efe8e8;
+  }
+}

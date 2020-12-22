@@ -1,0 +1,22 @@
+@import '../colors';
+
+.SummaryListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #EFE8E8;
+  padding: 0 2.5rem 1rem 2.5rem;
+  &__sno, &__dosage, &__quantity, &__product, &__price {
+    flex: 1
+  }
+  &__dosage, &__quantity {
+    display: flex;
+    align-items: center;
+    svg { cursor: pointer; margin-left: 2rem; display: flex;  }
+  }
+  &__price {
+    display: flex;
+    &-original { margin-left: 8px; display: flex; flex-direction: column; }
+  }
+  &__product-distributor, &__price-original--discount { color: $medeasy-green-color; }
+}

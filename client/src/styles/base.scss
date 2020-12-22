@@ -1,0 +1,61 @@
+@import './colors';
+@import './mixins';
+*, *::after,*::before {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth !important;
+}
+
+.fullScreen {
+  display: block;
+  min-height: 60vh !important;
+}
+
+section {
+  height: 100%;
+}
+
+body {
+  color: $black-color;
+  & .App {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    &__secure {
+      padding: 1.7rem 2.5rem;
+      width: 100%;
+      min-height: 10.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+  ul, ol {
+    list-style: none;
+  }
+  label {
+    color: $medeasy-label-color;
+  }
+  a, a:visited, a:active, a:link {
+    text-decoration: none;
+    color: inherit;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+  }
+  .container {
+    max-width: 144rem;
+    @include desktop { max-width: 1200px; }
+    margin: 0 auto;
+    height: 100%;
+  }
+  .LandingPage .review-item:not(:last-child) {
+    border-right: 1px solid #ccc;
+  }
+}

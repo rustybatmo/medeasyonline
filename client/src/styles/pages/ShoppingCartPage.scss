@@ -1,0 +1,53 @@
+.ShoppingCartPage {
+  margin-top: 2.5rem;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    &--name { margin-left: 2rem; }
+  }
+  &__main {
+    padding: 0rem 9rem;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 0;
+    &--price {
+      margin-top: 2rem;
+      align-self: flex-end;
+      &-subtotal, &-amount, &-savings {
+        &.ShoppingCartPage__main--general:not(:last-child) {
+          margin-bottom: 5px;
+        }
+        display: flex;
+        align-items: center;
+        &-title {
+          text-align: center;
+          margin-right: 8rem;
+          color: #979797;
+        }
+      }
+      &-amount-value {
+        display: flex;
+        align-items: center;
+        & img { margin-left: 1.5rem; }
+      }
+    }
+    &--ctas {
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .CustomButton:nth-child(2) {
+        margin-left: auto;
+        margin-right: 2.5rem;
+      }
+      &-back {
+        display: flex;
+        align-items: center;
+        & svg {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../colors';
+
+.ProductListItem {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 4px $medeasy-shadow-color;
+  padding: 1.5rem 1.2rem;
+  -webkit-transition: box-shadow .2s ease-in;
+  -moz-transition: box-shadow .2s ease-in;
+  -ms-transition: box-shadow .2s ease-in;
+  -o-transition: box-shadow .2s ease-in;
+  transition: box-shadow .2s ease-in;
+
+  &:hover {
+    box-shadow: 0 0 1rem $medeasy-shadow-color;
+  }
+
+  &__image {
+    max-width: 12.5rem;
+    height: 9.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__image,
+  a, button {
+    align-self: center;
+  }
+
+  & a {
+    justify-self: flex-end
+  }
+}
